@@ -31,7 +31,7 @@ namespace Ifelse
                 Console.WriteLine("Girilen sayı sıfırdır.");
             }
 
-            if (sayi > 0)
+            if (sayi % 2 == 0)
             {
                 Console.WriteLine("Girilen sayı çifttir.");
             }
