@@ -1,36 +1,46 @@
-﻿Console.Write("Lütfen bir sayı giriniz:");
-Console.WriteLine("22");
+using System;
 
-int sayi = 22;
-
-if (sayi >= 10)
+namespace If-else
 {
-    if (sayi == 10)
+    class Program
     {
-        Console.WriteLine("Girilen sayı 10'dur.");
-    }
-    else if (sayi < 10)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Girilen sayı 10'dan küçüktür.");
-        }
-        else
-        {
-            Console.WriteLine("Girilen sayı 10'dan büyüktür.");
-        }
-    
-}
-else
-{
-    Console.WriteLine("Girilen sayı sıfırdır.");
-}
+            Console.Write("Lutfen bir sayi giriniz: ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
 
-if (sayi > 0)
-{
-    Console.WriteLine("Girilen sayı çifttir.");
+
+            if (sayi >= 10)
+            {
+                if (sayi == 10)
+                {
+                    Console.WriteLine("Girilen sayı 10'dur.");
+                }
+                else if (sayi < 10)
+                {
+                    Console.WriteLine("Girilen sayı 10'dan küçüktür.");
+                }
+                else
+                {
+                    Console.WriteLine("Girilen sayı 10'dan büyüktür.");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Girilen sayı sıfırdır.");
+            }
+
+            if (sayi > 0)
+            {
+                Console.WriteLine("Girilen sayı çifttir.");
+            }
+            else
+            {
+                Console.WriteLine("Girilen sayı tektir");
+            }
+
+        }
+    }
 }
-else
-{
-    Console.WriteLine("Girilen sayı tektir.");
-}
-   
 
