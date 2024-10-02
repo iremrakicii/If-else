@@ -1,6 +1,6 @@
 using System;
 
-namespace If-else
+namespace Ifelse
 {
     class Program
     {
